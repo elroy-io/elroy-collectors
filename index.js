@@ -1,4 +1,5 @@
-var Server = new require('elroy-cloud');
+var Elroy = require('elroy-cloud');
+var Server = new Elroy();
 var UG = require('usergrid');
 var Splunk = require('splunkstorm');
 
@@ -10,7 +11,7 @@ var apigee = new UG.client({
 var API_KEY = process.env.API_KEY;
 var PROJECT_ID = process.env.PROJECT_ID;
 
-var logger = new storm.Log(API_KEY, PROJECT_ID);
+var logger = new Splunk.Log(API_KEY, PROJECT_ID);
 
 Server.collector(function(data) {
   var o = {
