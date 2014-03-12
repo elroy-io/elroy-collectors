@@ -16,7 +16,7 @@ var logger = new Splunk.Log(API_KEY, PROJECT_ID);
 Server.collector(function(data) {
   var o = {
     type: '_elroylogs', 
-    data: log
+    data: data 
   };
 
   apigee.createEntity(o, function(err, res) {
@@ -29,7 +29,7 @@ Server.collector(function(data) {
 });
 
 Server.collector(function(data) {
-  logger.send(JSON.stringify(log));
+  logger.send(JSON.stringify(data));
 });
 
 
