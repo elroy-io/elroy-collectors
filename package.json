@@ -11,7 +11,7 @@
   "dependencies": {
     "usergrid": "~0.10.7",
     "splunkstorm": "~0.1.0",
-    "elroy-cloud": "0.0.3"
+    "elroy-cloud": "0.0.4"
   },
   "engines": {
     "node": "0.10.x",
