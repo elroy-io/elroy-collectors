@@ -13,39 +13,14 @@ var PROJECT_ID = process.env.PROJECT_ID;
 
 var logger = new Splunk.Log(API_KEY, PROJECT_ID);
 
-Server.collector('photosensor/value', function(data) {
-  var o = {
-    type: '_elroylogs', 
-    data: {type: 'photosensor/value', data: data }
-  };
-
-  apigee.createEntity(o, function(err, res) {
-    if(err) {
-      console.log('Error:', res);
-    } else {
-      console.log('Collected');
-    }
-  });
-});
-
-Server.collector('photosensor/value', function(data) {
+Server.collector('photosensor/xbee-photosensor-392e/value', function(data) {
   logger.send(JSON.stringify({type: 'photosensor/value', data:data}));
 });
 
-Server.collector(function(data) {
-  var o = {
-    type: '_elroylogs', 
-    data: data 
-  };
-
-  apigee.createEntity(o, function(err, res) {
-    if(err) {
-      console.log('Error:', res);
-    } else {
-      console.log('Collected');
-    }
-  });
+Server.collector('photosensor/xbee-photosensor-6dd5/value', function(data) {
+  logger.send(JSON.stringify({type: 'photosensor/value', data:data}));
 });
+
 
 Server.collector(function(data) {
   logger.send(JSON.stringify(data));
