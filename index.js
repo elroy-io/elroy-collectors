@@ -17,7 +17,7 @@ var PROJECT_ID = process.env.PROJECT_ID;
 
 var logger = new Splunk.Log(API_KEY, PROJECT_ID);
 
-Server.collector('photosensor/xbee-photosensor-392e/value', function(data) {
+/*Server.collector('photosensor/xbee-photosensor-392e/value', function(data) {
   logger.send(JSON.stringify({type: 'photosensor/xbee-photosensor-392e/value', data:data}));
 });
 
@@ -29,7 +29,7 @@ Server.collector('photosensor/xbee-photosensor-6dd5/value', function(data) {
 Server.collector(function(data) {
   logger.send(JSON.stringify(data));
 });
-
+*/
 
 
 Server.listen(process.env.PORT || 3000);
