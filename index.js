@@ -2,7 +2,11 @@ var Elroy = require('elroy-cloud');
 var Server = new Elroy();
 var UG = require('usergrid');
 var Splunk = require('splunkstorm');
-
+if(process.env.NODETIME_ACCOUNT_KEY) {
+  require('nodetime').profile({
+    accountKey: process.env.NODETIME_ACCOUNT_KEY
+  });
+}
 var apigee = new UG.client({
   orgName:'mtraining',
   appName:'sandbox'
