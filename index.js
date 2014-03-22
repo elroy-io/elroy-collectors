@@ -15,10 +15,9 @@ var apigee = new UG.client({
 var API_KEY = process.env.API_KEY;
 var PROJECT_ID = process.env.PROJECT_ID;
 
-var logger = new Splunk.Log(API_KEY, PROJECT_ID);
+var logger = new Splunk(API_KEY, PROJECT_ID);
 
 Server.collector('photosensor/value', function(data) {
-  console.log(data);
   logger.send(JSON.stringify({type: 'photosensor/value', data:data}));
 });
 
