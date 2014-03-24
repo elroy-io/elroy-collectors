@@ -9,9 +9,7 @@
   "author": "mdobs",
   "license": "MIT",
   "dependencies": {
-    "usergrid": "~0.10.7",
-    "elroy-cloud": "0.0.10",
-    "nodetime": "~0.8.15",
+    "elroy-cloud": "0.0.14",
     "splunkstorm": "~0.1.0"
   },
   "engines": {
