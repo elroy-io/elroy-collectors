@@ -5,7 +5,7 @@ var Splunk = require('splunkstorm');
 var API_KEY = process.env.API_KEY;
 var PROJECT_ID = process.env.PROJECT_ID;
 
-var logger = new Splunk(API_KEY, PROJECT_ID);
+var logger = new Splunk.Log(API_KEY, PROJECT_ID);
 
 var count = 0;
 
