@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "splunkstorm": "~0.1.0",
-    "elroy-cloud": "0.0.14"
+    "elroy-cloud": "0.0.15"
   },
   "engines": {
     "node": "0.10.x",
