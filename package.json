@@ -12,7 +12,7 @@
     "usergrid": "~0.10.7",
     "elroy-cloud": "0.0.10",
     "nodetime": "~0.8.15",
-    "splunkstorm2": "0.0.2"
+    "splunkstorm": "~0.1.0"
   },
   "engines": {
     "node": "0.10.x",
