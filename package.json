@@ -9,8 +9,8 @@
   "author": "mdobs",
   "license": "MIT",
   "dependencies": {
-    "elroy-cloud": "0.0.14",
-    "splunkstorm": "~0.1.0"
+    "splunkstorm": "~0.1.0",
+    "elroy-cloud": "0.0.14"
   },
   "engines": {
     "node": "0.10.x",
