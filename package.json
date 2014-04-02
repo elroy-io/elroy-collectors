@@ -10,9 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "usergrid": "~0.10.7",
-    "elroy-cloud": "0.0.10",
     "nodetime": "~0.8.15",
-    "splunkstorm2": "0.0.3"
+    "splunkstorm2": "0.0.3",
+    "elroy-cloud": "0.0.15"
   },
   "engines": {
     "node": "0.10.x",
