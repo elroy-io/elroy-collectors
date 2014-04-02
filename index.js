@@ -22,7 +22,6 @@ Server.collector('photosensor/xbee-photosensor-392e/value', function(data) {
 
 var throttleB = 0;
 Server.collector('photosensor/xbee-photosensor-6dd5/value', function(data) {
-  console.log(data);
   var now = new Date().getTime();
   if(now-throttleB > 1000){
     var d = JSON.stringify({type: 'photosensor/xbee-photosensor-6dd5/value', data:data});
