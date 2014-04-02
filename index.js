@@ -21,9 +21,9 @@ Server.collector('photosensor/value', function(data) {
   logger.send(JSON.stringify({type: 'photosensor/value', data:data}));
 });
 
-/*Server.collector('photosensor/xbee-photosensor-6dd5/value', function(data) {
+Server.collector('photosensor/xbee-photosensor-6dd5/value', function(data) {
   logger.send(JSON.stringify({type: 'photosensor/xbee-photosensor-6dd5/value', data:data}));
-});*/
+});
 
 
 Server.collector(function(data) {
