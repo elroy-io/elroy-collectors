@@ -1,5 +1,5 @@
-var Elroy = require('elroy-cloud');
-var Server = new Elroy();
+var Zetta = require('zetta-cloud');
+var Server = new Zetta();
 var Splunk = require('splunkstorm2');
 
 var API_KEY = process.env.API_KEY;
